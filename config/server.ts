@@ -4,5 +4,5 @@ export default ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
-  url: env('PUBLIC_URL', 'https://cms-strapi-ozwwntxvw-natalio-rabasco-navarros-projects.vercel.app/'),
+  url: env('PUBLIC_URL', 'https://cms-strapi-am.vercel.app/'),
 });
