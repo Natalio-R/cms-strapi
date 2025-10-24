@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "books",
+  "info": {
+    "singularName": "book",
+    "pluralName": "books",
+    "displayName": "Book"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ISBN": {
+      "type": "string",
+      "required": true
+    },
+    "Portrait": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Synopsis": {
+      "type": "text",
+      "required": false
+    },
+    "Shop_URL": {
+      "type": "string",
+      "regex": "[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)"
+    },
+    "Publication_Date": {
+      "type": "date"
+    }
+  }
+}
