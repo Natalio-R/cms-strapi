@@ -1,5 +1,3 @@
-// config/env/development/database.ts
-
 export default ({ env }) => ({
   connection: {
     client: 'sqlite',
